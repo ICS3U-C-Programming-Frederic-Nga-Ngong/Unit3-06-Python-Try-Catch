@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# Created By: Your Name
-# Date: Month Day, Year
-# Write what this program does.
+# Created By: Fred
+# Date: Feb 18 2008
+# Checks if the number is an integer or not, and if it is the correct guess .
 
 import random
 
@@ -13,7 +13,7 @@ def main():
     # get the number from the user
     number = input("Enter a number between 0 and 9: ")
 
-     # Verifies if number entered by user is an integer
+    # Verifies if number entered by user is an integer
     try:
 
         User_integer = int(number)
@@ -25,14 +25,13 @@ def main():
         # If not, then tell the user the correct number
         else:
             print(
-            "Sorry, you are wrong. The correct guess is {}".format(random_variable)
-        )
-        
+                "Sorry, you are wrong. The correct guess is {}".format(random_variable)
+            )
+
     except ValueError:
-        print("{} is not an integer" . format(number))
-            
+        print("{} is not an integer".format(number))
 
 
 if __name__ == "__main__":
 
-        main()
+    main()
