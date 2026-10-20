@@ -20,7 +20,7 @@ def main():
 
         # Check if the number is the correct guess
         if random_variable == User_integer:
-            print("The number is the correct guess")
+            print("/nThe number is the correct guess")
 
         # If not, then tell the user the correct number
         else:
@@ -28,8 +28,13 @@ def main():
                 "Sorry, you are wrong. The correct guess is {}".format(random_variable)
             )
 
+    # Tells the user what he entered is not a valid number
     except ValueError:
         print("{} is not an integer".format(number))
+
+    #
+    finally:
+        print("Thanks for playing")
 
 
 if __name__ == "__main__":
